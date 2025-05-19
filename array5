@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main(){
+
+	int arr[] = {5,4,6,2,1};
+	int n = arr[0];
+	for(int i = 1 ; i < 5; ++i){
+		if(n > arr[i]){
+			n = arr[i];
+		}else{
+			printf("No\n");
+			return 0;
+		}
+	}
+	printf("YES\n");
+	return 0;
+}
