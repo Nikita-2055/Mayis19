@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main(){
+	int n = 0;
+	int a = 15;
+	printf("tivy gtnvum e 0-100 mijakayqum\n");
+	while(1){
+		scanf("%d",&n);
+		if(n == a){
+			printf("duq gtaq:\n");
+			return 0;
+		}else{
+			printf("ayd tivy che porceq krkin:\n");
+		}
+	}
+	return 0;
+}
