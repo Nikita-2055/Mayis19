@@ -1,0 +1,10 @@
+#include<stdio.h>
+char function(char ch){
+	ch = ch ^ 32;
+	return ch;
+}
+int main(){
+	char ch = 'C';
+	printf("%c\n",function(ch));
+	return 0;
+}
