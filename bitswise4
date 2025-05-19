@@ -1,0 +1,17 @@
+#include<stdio.h>
+int function(int n, int count){
+	for(int i = 0; i < 32; i++){
+		if(n & (1 << i)){
+			count++;
+		}
+	}
+	return count;
+}
+int main(){
+	int n = 0;
+	int count = 0;
+	printf("input number: ");
+	scanf("%d",&n);
+	printf("result: %d\n",function(n,count));
+	return 0;
+}
