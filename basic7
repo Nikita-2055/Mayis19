@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+int main(){
+	float a = 0;
+	float b = 0;
+	printf("input float number1: ");
+	scanf("%f",&a);
+	printf("input float number2: ");
+	scanf("%f",&b);
+	float res = a * b;
+	printf("result: %.3f\n",res);
+	return 0;
+}
