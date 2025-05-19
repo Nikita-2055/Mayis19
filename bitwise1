@@ -1,0 +1,17 @@
+#include<stdio.h>
+int function(int n){
+	int res = n & 1;
+	return res;
+}
+int main(){
+	int n = 0;
+	printf("input number:");
+	scanf("%d",&n);
+	int res = function(n);
+	if(res){
+		printf("this number odd:\n");
+	}else{
+		printf("this number even:\n");
+	}
+	return 0;
+}
