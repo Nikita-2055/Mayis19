@@ -1,0 +1,15 @@
+#include<stdio.h>
+int function(int n,int i){
+	int res = n ^ (1 << i);
+	return res;
+}
+int main(){
+	int n = 0;
+	int i = 0;
+	printf("input number: ");
+	scanf("%d",&n);
+	printf("input index when do you wont to chagne (1->0) or (0->1): ");
+	scanf("%d",&i);
+	printf("result: %d\n",function(n,i));
+	return 0;
+}
