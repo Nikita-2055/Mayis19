@@ -1,0 +1,13 @@
+#include<stdio.h>
+int age(int a){
+	int res = a * 365;
+	return res;
+	
+}
+int main(){
+	int a = 0;
+	printf("input your age(year):");
+	scanf("%d",&a);
+	printf("result(day): %d\n",age(a));
+	return 0;
+}
