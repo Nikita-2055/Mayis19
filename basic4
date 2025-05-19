@@ -1,0 +1,11 @@
+#include<stdio.h>
+int function(int x){
+	return  (4 * x + 21 * x * x - 12);
+}
+int main(){
+	int x = 0;
+	printf("input number: ");
+	scanf("%d",&x);
+	printf("result: %d\n",function(x));
+	return 0;
+}
