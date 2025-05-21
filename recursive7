@@ -1,0 +1,17 @@
+#include<stdio.h>
+int function(char *str,int count,int index){
+    if(str[index] == '\0'){
+        return count;
+    }else{
+        count++;
+    }
+    return function(str,count,index + 1);
+}
+int main(){
+    char str[] = "hello world";
+    int count = 0;
+    int index = 0;
+    int res = function(str,count,index);
+    printf("result: %d\n",res);
+    return 0;
+}
