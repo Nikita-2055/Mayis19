@@ -1,0 +1,25 @@
+#include<stdio.h>
+int revers(int num){
+    int a = 0;
+    while(num){
+        a = a * 10 + num % 10;
+        num = num / 10;
+    }
+    return a;
+}
+int add(int num){
+    return num + revers(num);
+}
+int polimdrom(int num,int count){
+    while(num != revers(num)){
+        count++;
+        num = add(num);
+    }
+    return count;
+}
+int main(){
+    int num = 87;
+    int count = 0;
+    printf("result: %d\n",polimdrom(num,count));
+    return 0;
+}
