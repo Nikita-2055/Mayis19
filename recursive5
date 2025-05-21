@@ -1,0 +1,14 @@
+#include<stdio.h>
+int function(int n, int res){
+    if(n == 0){
+        return res;
+    }
+    res = res * (n % 10);
+    return function(n/10,res);
+}
+int main(){
+    int n = 159;
+    int res = 1;
+    printf("result: %d\n",function(n,res));
+    return 0;
+}
