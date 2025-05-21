@@ -1,0 +1,15 @@
+#include<stdio.h>
+int function(int count,int n){
+    for(int i = 0; i < 32; i++){
+        if(n & (1 << i)){
+            count++;
+        }
+    }
+    return count;
+}
+int main(){
+    int count = 0;
+    int n = 5;
+    printf("result: %d\n",function(count,n));
+    return 0;
+}
