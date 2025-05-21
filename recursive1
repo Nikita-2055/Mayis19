@@ -1,0 +1,15 @@
+#include<stdio.h>
+void function(int n){
+    if(n > -1){
+        printf("%d",n);
+    }else{
+        return ;
+    }
+    return function(n-1);
+}
+int main(){
+    int n = 0;
+    scanf("%d",&n);
+    function(n);
+    return 0;
+}
