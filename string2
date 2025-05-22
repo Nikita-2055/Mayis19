@@ -1,0 +1,17 @@
+#include<stdio.h>
+int function(char *str){
+    int index = -1;
+    for(int i = 0; str[i] != '\0'; ++i){
+        if(str[i] >= '0' && str[i] <= '9'){
+            index = i;
+            return index;
+        }
+    }
+   return index;
+}
+int main(){
+    char str[] = "hello wor1ld";
+    int index = function(str);
+    printf("result: %d\n",index);
+    return 0;
+}
