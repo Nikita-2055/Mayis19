@@ -1,0 +1,14 @@
+#include<stdio.h>
+int function(char *str){
+    int count = 0;
+    for(int i = 0; str[i] != '\0';i++){
+        count++;
+    }
+    return count;
+}
+int main(){
+    char str[] = "hello world";
+    int res = function(str);
+    printf("resul: %d\n",res);
+    return 0;
+}
