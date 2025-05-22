@@ -1,0 +1,20 @@
+#include<stdio.h>
+char* function(int size, char* str,char* str2){
+    char *ptr = str2;
+    for(int i = 0; str[i] != '\0'; i++){
+        if(str[i] >= '0' && str[i] <= '9'){
+            *ptr = str[i];
+            ptr++;
+        }
+    }
+    *ptr = '\0';
+    return str2;
+}
+int main(){
+    int size = 5;
+    char str[size];
+    char str2[size];
+    fgets(str,size,stdin);
+    printf("result: %s\n",function(size,str,str2));
+    return 0;
+}
