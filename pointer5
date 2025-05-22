@@ -1,0 +1,20 @@
+#include<stdio.h>
+char* function(char *str2, const char *str) {
+    char *ptr = str2;
+
+    while (*str != '\0') {
+        *ptr = *str;
+        ptr++;
+        str++;
+    }
+    *ptr = '\0';
+
+    return str2;
+}
+int main(){
+    char str[] = "hello world";
+    char str2[20];
+    function(str2,str);
+    printf("result: %s\n",str2);
+    return 0;
+}
